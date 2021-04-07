@@ -29,8 +29,7 @@ target/
 *.iml
 *.iws
 *.ipr
-.idea/uiDesigner.xml
-.idea/vcs.xml
+.idea/
 
 # eclipse project file
 .settings/
