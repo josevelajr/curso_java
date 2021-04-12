@@ -1,13 +1,10 @@
-import entities.Comment;
-import entities.Post;
+import entities.Account;
+import entities.BusinessAccount;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws ParseException {
-
+    public static void main(String[] args) {
 
 
     }
