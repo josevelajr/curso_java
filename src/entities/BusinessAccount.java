@@ -37,6 +37,14 @@ public class BusinessAccount extends Account {
         }
     }
 
+    @Override
+    public Double saque(double valor) {
+        super.saque(valor);
+        saldo -= 2.00;
+
+        return saldo;
+    }
+
     public String infoEmprestimo() {
         return "BusinessAccount{" +
                 "limiteEmprestimo=" + limiteEmprestimo +"\n"+

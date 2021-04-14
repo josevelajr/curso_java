@@ -37,6 +37,9 @@ public class Account {
     }
 
     public Double saque(double valor) {
+
+        System.out.println("Taxa Saque");
+        this.saldo -= 5.55;
         this.saldo -= valor;
 
 
