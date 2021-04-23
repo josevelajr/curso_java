@@ -47,9 +47,10 @@ public class Exercicio130 {
 
         }
 
-        for (Funcionario listaDeFuncionarios: listaFuncionarios) {
-            System.out.println("Nome do Funcionario: " + listaDeFuncionarios.getNome()
-                    + " - Pagamento: " + listaDeFuncionarios.pagamento(listaDeFuncionarios.getHora(), listaDeFuncionarios.getValorPorHora()) );
+        //Para cada funcionário na lista listFunc da listaFuncionarios
+        for (Funcionario listFunc: listaFuncionarios) {
+            System.out.println("Nome do Funcionario: " + listFunc.getNome()
+                    + " - Pagamento: " + listFunc.pagamento(listFunc.getHora(), listFunc.getValorPorHora()) );
 
         }
 
