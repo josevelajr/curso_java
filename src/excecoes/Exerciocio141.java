@@ -1,15 +1,12 @@
-import entities.*;
+package excecoes;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Exerciocio141 {
 
+    public void exerciocio141(){
         File file = new File("/home/jvela/Documentos/Testes_Curso_Java/test");
         Scanner sc = null;
         try {
@@ -26,5 +23,4 @@ public class Main {
             System.out.println("Bloco finally executado");
         }
     }
-
 }
