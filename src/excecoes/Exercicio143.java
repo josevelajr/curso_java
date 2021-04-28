@@ -1,14 +1,14 @@
-import entities.*;
+package excecoes;
 
-import java.io.File;
-import java.io.IOException;
+import entities.Reserva;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
 
-public class Main {
-    public static void main(String[] args) throws ParseException {
+public class Exercicio143 {
 
+    public void exerciocio143() throws ParseException {
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
 
         Date entrada = sdf1.parse("27/04/2021");
@@ -33,7 +33,7 @@ public class Main {
             }
         }
 
-
     }
+
 
 }
