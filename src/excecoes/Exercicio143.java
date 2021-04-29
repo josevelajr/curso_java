@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Exercicio143 {
 
-    public void exerciocio143() throws ParseException {
+    public void exerciocio143() throws DomainException, ParseException {
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
 
         Date entrada = sdf1.parse("27/04/2021");

@@ -1,5 +1,7 @@
 package entities;
 
+import excecoes.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +16,10 @@ public class Reserva {
     public Reserva() {
     }
 
-    public Reserva(Integer numeroQuarto, Date checkin, Date checkout) {
+    public Reserva(Integer numeroQuarto, Date checkin, Date checkout) throws DomainException {
+        if (checkout.before(checkin)){
+            throw new DomainException("Data final deve ser superior a data inicial");
+        }
         this.numeroQuarto = numeroQuarto;
         this.checkin = checkin;
         this.checkout = checkout;
@@ -42,7 +47,15 @@ public class Reserva {
         return TimeUnit.DAYS.convert(diferenca, TimeUnit.MILLISECONDS);
     }
 
-    public void atualizarDatas(Date checkin, Date checkout) {
+    public void atualizarDatas(Date checkin, Date checkout) throws DomainException {
+
+        if (getCheckin().after(checkin) || getCheckout().after(checkout)){
+            throw new DomainException("Data de reservas devem ser maiores que datas anteriores");
+        }
+        if (checkout.before(checkin)){
+            throw new DomainException("Data final deve ser superior a data inicial");
+        }
+
         this.checkin = checkin;
         this.checkout = checkout;
 
