@@ -1,8 +1,7 @@
 package entities;
 
-import enumcompos.OrderStatus;
+import enums.OrderStatus;
 
-import javax.crypto.spec.PSource;
 import java.util.Date;
 
 public class Order {

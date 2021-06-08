@@ -1,4 +1,4 @@
-package enumcompos;
+package enums;
 
 public enum WorkerLevel {
 

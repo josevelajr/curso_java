@@ -1,4 +1,4 @@
-package enumcompos;
+package enums;
 
 import entities.Comment;
 import entities.Post;
