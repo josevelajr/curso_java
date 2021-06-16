@@ -33,6 +33,14 @@ public class Produto2 {
         this.valor = valor;
     }
 
+    public static String staticUpperCaseName(Produto2 p){
+        return p.getNome().toUpperCase(Locale.ROOT);
+    }
+
+    public String nonUpperCaseName(){
+        return nome.toUpperCase(Locale.ROOT);
+    }
+
     @Override
     public String toString() {
         return "Produto2{" +
